@@ -29,13 +29,13 @@ def main():
     print('Date:', procedure1.get_procedure_date())
     print('Practioner:', procedure1.get_practioner_name())
     charge1 = float(procedure1.get_procedure_charges())
-    print('Charge: $', "{:.2f}".format(charge1))
+    print('Charge: $', "{:.2f}".format(charge1) + '\n')
 
     print('Procedure:', procedure2.get_prodedure_name())
     print('Date:', procedure2.get_procedure_date())
     print('Practioner:', procedure2.get_practioner_name())
     charge2 = float(procedure2.get_procedure_charges())
-    print('Charge: $', "{:.2f}" and "{:,}".format(charge2))
+    print('Charge: $', "{:.2f}" and "{:,}".format(charge2) + '\n')
     
     charge3 = float(procedure3.get_procedure_charges())
     
