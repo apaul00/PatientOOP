@@ -17,7 +17,7 @@ def main():
 
     procedure1 = pr.Procedure('Physical Exam','2/15/2022', 'Dr. Irvine', '250', '1')
     procedure2 = pr.Procedure('MRI','2/15/2022', 'Dr. Hamilton', '1500', '1')
-    procdure3 = pr.Procedure('MRI','2/17/2022', 'Dr. Drey', '1200', '2')
+    procedure3 = pr.Procedure('MRI','2/17/2022', 'Dr. Drey', '1200', '2')
 
 
     print('*** Patient Bill ***')
@@ -37,15 +37,15 @@ def main():
     charge2 = float(procedure2.get_procedure_charges())
     print('Charge: $', "{:.2f}" and "{:,}".format(charge2))
     
-    charge3 = float(procdure3.get_procedure_charges())
+    charge3 = float(procedure3.get_procedure_charges())
     
-    total_charge = charge1 + charge2 + charge3
+    total_charge = charge1 + charge2 
 
     if veteran_status == True:
         total_charge = total_charge * .60
     
 
-    print('Total Charges: $', total_charge)
+    print('Total Charges: $', "{:.2f}".format(total_charge))
 
 main()
 
